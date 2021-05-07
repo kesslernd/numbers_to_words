@@ -8,6 +8,7 @@ def process_match(match):
     return number_to_word(int(m))
 
 def number_to_word(number):
+    number = abs(number)
     less_than_twenty = {
         1: "one", 2: "two", 3: "three",
         4: "four", 5: "five", 6: "six",
